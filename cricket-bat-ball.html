@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation on Cricket Bat-Ball</title>
+
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+
+        .box {
+            border: 5px solid black;
+            background-color: aqua;
+            display: flex;
+            height: 650px;
+            border-radius: 40%;
+            margin: 3%;
+
+        }
+
+        .bat {
+            width: 450px;
+            text-align: right;
+        }
+
+        .box:hover .bat {
+            position: relative;
+            transform: rotate(-25deg);
+            transform-origin: top right;
+            transition: transform .5s ease-in;
+        }
+
+        .bat img {
+            width: 70%;
+
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color: red;
+            transform: translate(-5px, 450px);
+
+        }
+
+        .box:hover .ball {
+            transform: translate(970px, 45px);
+            transition: transform 2s ease-out .5s;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .box:hover .umpire img {
+            transform: translateX(5px);
+            transition-delay: 2.5s;
+            visibility: visible;
+        }
+
+        .umpire {
+            margin-top: 100px;
+            margin-left: 50px;
+             visibility: hidden; 
+             transition: transform 1s;
+        }
+
+        .umpire img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Caricket Bating</h1>
+        <div class="box">
+            <div class="bat">
+                <img src="image/Cricket-Bat-PNG-Pic.png" alt="">
+            </div>
+
+            <div class="ball"></div>
+            <div class="umpire">
+                <img src="image/Untitled design (1).png" alt="" target="_blank">
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
